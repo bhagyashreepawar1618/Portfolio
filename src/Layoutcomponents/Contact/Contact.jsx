@@ -1,4 +1,32 @@
+import { useState } from 'react';
+import axios from 'axios';
 function Contact() {
+  const [name, setName] = useState('');
+  const [email, setemail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    //api call here
+    try {
+      const response = await axios.post(
+        'http://localhost:5000/api/v1/users/sendmessage',
+        {
+          name,
+          email,
+          message,
+        }
+      );
+      console.log('response from backend is =', response.data);
+      alert('Message Sent Successfully..!!');
+    } catch (error) {
+      console.log(
+        'Error occured while sending your information ',
+        error.response?.data || error.message
+      );
+    }
+  };
   return (
     <section className="py-16 bg-purple-50">
       <div className="max-w-4xl mx-auto px-6">
@@ -18,11 +46,19 @@ function Contact() {
               <input
                 type="text"
                 placeholder="Your Name"
+                value={name}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
                 className="w-full border border-purple-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400"
               />
               <input
                 type="email"
                 placeholder="Your Email"
+                value={email}
+                onChange={(e) => {
+                  setemail(e.target.value);
+                }}
                 className="w-full border border-purple-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400"
               />
             </div>
@@ -30,11 +66,16 @@ function Contact() {
             <textarea
               rows="5"
               placeholder="Your Message"
+              value={message}
+              onChange={(e) => {
+                setMessage(e.target.value);
+              }}
               className="border border-purple-200 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400"
             />
 
             <button
               type="submit"
+              onClick={handleSubmit}
               className="self-start bg-purple-600 text-white px-6 py-2 rounded-full font-medium hover:bg-purple-700 transition"
             >
               Send Message
