@@ -16,55 +16,57 @@ function About() {
           style={{
             fontSize: '48px',
             marginBottom: '20px',
-            color: '#c4b5fd',
+            color: '#635599',
           }}
         >
           About Me
         </h1>
 
         <p style={{ fontSize: '18px', lineHeight: '1.8', color: '#000000' }}>
-          Hey! 👋 I’m a Computer Engineering student who genuinely enjoys
-          building things on the web. I started with the basics of programming
-          and gradually moved into frontend development — learning how real
-          applications actually work, not just copying code.
+          Hey! 👋 I’m a Computer Engineering student who loves building
+          real-world web applications. Over time, I’ve moved beyond just
+          learning concepts and started creating complete projects that solve
+          practical problems.
         </p>
 
         <p style={{ fontSize: '18px', lineHeight: '1.8', marginTop: '15px' }}>
-          Right now, I’m focused on{' '}
-          <strong>JavaScript, React, and React Router</strong>. I like
-          understanding the flow of an application — how components connect, how
-          state changes, and how routing ties everything together.
+          I’ve built a <strong>YouTube Clone</strong> as a full-stack project
+          and also developed a <strong>Food Management system</strong> from
+          scratch. Currently, I’m working on a{' '}
+          <strong>Social Media Clone</strong> full-stack application while
+          expanding my skills in <strong>Next.js</strong> to build more scalable
+          and production-ready applications.
         </p>
 
         <h2
           style={{
             marginTop: '40px',
             fontSize: '32px',
-            color: '#ddd6fe',
+            color: '#635895',
           }}
         >
           What I’m Learning 🚀
         </h2>
 
         <ul style={{ fontSize: '18px', lineHeight: '2', marginTop: '15px' }}>
-          <li>⚛️ React (components, hooks, routing)</li>
-          <li>🧠 JavaScript fundamentals & DOM</li>
-          <li>🎨 Styling with CSS & UI basics</li>
-          <li>📦 Building small real-world projects</li>
+          <li>⚛️ React & Next.js (components, hooks, routing, SSR basics)</li>
+          <li>🧠 Advanced JavaScript (ES6+, async/await, API integration)</li>
+          <li>🗄️ Full-Stack Development (Node.js, Express, MongoDB)</li>
+          <li>🚀 Building scalable real-world applications</li>
         </ul>
 
         <h2
           style={{
             marginTop: '40px',
             fontSize: '32px',
-            color: '#ddd6fe',
+            color: '#63559f',
           }}
         >
           My Goal ✨
         </h2>
 
         <p style={{ fontSize: '18px', lineHeight: '1.8' }}>
-          My goal is to become a confident frontend developer who understands
+          My goal is to become a confident fullstack developer who understands
           concepts deeply, builds clean projects, and keeps improving step by
           step — without rushing the process.
         </p>
