@@ -2,6 +2,7 @@
 import Card from '../../Card';
 import food from '../../../../assets/fullstack/foodmanagement.png';
 import incoming from '../../../../assets/incoming.png';
+import yt from '../../../../assets/fullstack/ytclone.png';
 function FullstackProjects() {
   return (
     <>
@@ -10,15 +11,13 @@ function FullstackProjects() {
           Fullstack Projects
         </h2>
         <center>
-          <div
-            className="bg-white flex items-center justify-center max-w-[1300px] p-5 gap-5 mx-auto flex-col md:flex-row
-"
-          >
+          <div className="bg-white flex items-center justify-center max-w-[1300px] p-5 gap-5 mx-auto flex-col md:flex-row">
             {/* food management project */}
             <Card
               image={food}
               cardName="Food Management "
               projectInfo="A full-stack food management application (frontend completed). Backend integration planned using Node.js and MongoDB."
+              githublink="https://github.com/bhagyashreepawar1618/FOOD_MANAGEMENT.git"
             />
 
             {/* music recommander project */}
@@ -26,6 +25,7 @@ function FullstackProjects() {
               image={incoming}
               cardName="Mood Music Recommander"
               projectInfo="A full-stack  application (frontend completed). Backend integration planned using Node.js and MongoDB."
+              githublink="https://github.com/bhagyashreepawar1618/Mood_Music_Recommender.git"
             />
 
             {/* full stack social media clone  */}
@@ -33,6 +33,16 @@ function FullstackProjects() {
               image={incoming}
               cardName="Social Media web App"
               projectInfo="A full-stack  social media app clone built using react and Appwrite."
+              githublink="https://github.com/bhagyashreepawar1618/Social_Media_Web_App.git"
+            />
+          </div>
+
+          <div className="bg-white flex items-center justify-center max-w-[1300px] p-5 gap-5 mx-auto flex-col md:flex-row">
+            <Card
+              image={yt}
+              cardName="YouTube Clone"
+              projectInfo="A full-stack youtube clone  application , Backend integration planned using Node.js and MongoDB."
+              githublink="https://github.com/bhagyashreepawar1618/fullstack_yt_clone_app.git"
             />
           </div>
         </center>

@@ -15,20 +15,23 @@ function ReactProjects() {
           >
             <Card
               image={todo}
-              cardName="Food Management "
-              projectInfo="A full-stack food management application (frontend completed). Backend integration planned using Node.js and MongoDB."
+              cardName="Todo App "
+              projectInfo="A simple todo application made using react (context APi)"
+              githublink="https://github.com/bhagyashreepawar1618/Todo_react.git"
             />
 
             <Card
               image={passgenerator}
               cardName="Password Generator"
-              projectInfo="built using React (Api call)."
+              projectInfo="built using React (Api integration)."
+              githublink=""
             />
 
             <Card
               image={incoming}
               cardName="Currency Convertor"
-              projectInfo="Built using react with api calls."
+              projectInfo="Built using react with api integration."
+              githublink="https://github.com/bhagyashreepawar1618/currency_React.git"
             />
           </div>
         </center>

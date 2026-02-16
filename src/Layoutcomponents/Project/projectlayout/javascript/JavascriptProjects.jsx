@@ -22,18 +22,21 @@ function JavascriptProjects() {
               image={Bmi}
               cardName="BMI Calculator"
               projectInfo="BMI calculator built using core javascript,html5 and css5"
+              githublink="https://github.com/bhagyashreepawar1618/BMI_Calculator.git"
             />
 
             <Card
               image={Wdashboard}
               cardName="Weather Dashboard"
               projectInfo="Weather app using API integration and JavaScript."
+              githublink="https://github.com/bhagyashreepawar1618/Weather_Dashboard.git"
             />
 
             <Card
               image={currency}
               cardName="Currency Convertor"
               projectInfo="Real-time currency converter using APi integration and JavaScript."
+              githublink="https://github.com/bhagyashreepawar1618/Currency_Convertor.git"
             />
           </div>
 
@@ -42,18 +45,21 @@ function JavascriptProjects() {
               image={todo}
               cardName="Todo App"
               projectInfo="Task management app with add and delete features using Javascript (Dom manipulation)."
+              githublink="https://github.com/bhagyashreepawar1618/To-Do-List.git"
             />
 
             <Card
               image={tictactoe}
               cardName="Tic Tac Toe"
               projectInfo="Tic tac toe game using Javascript (Dom manipulation)."
+              githublink="https://github.com/bhagyashreepawar1618/Tic_Tac_Toe.git"
             />
 
             <Card
               image={stonepaper}
               cardName="Rock Paper Scissors"
               projectInfo="A simple game using Javascript (Dom manipulation)."
+              githublink="https://github.com/bhagyashreepawar1618/stone_paper_scissor.git"
             />
           </div>
         </center>
