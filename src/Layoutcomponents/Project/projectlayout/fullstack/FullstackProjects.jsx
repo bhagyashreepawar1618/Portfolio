@@ -12,20 +12,19 @@ function FullstackProjects() {
         </h2>
         <center>
           <div className="bg-white flex items-center justify-center max-w-[1300px] p-5 gap-5 mx-auto flex-col md:flex-row">
+            {/* fullstack youtube clone app  */}
+            <Card
+              image={yt}
+              cardName="YouTube Clone"
+              projectInfo="A full-stack youtube clone  application , Backend integration planned using Node.js and MongoDB."
+              githublink="https://github.com/bhagyashreepawar1618/fullstack_yt_clone_app.git"
+            />
             {/* food management project */}
             <Card
               image={food}
               cardName="Food Management "
               projectInfo="A full-stack food management application (frontend completed). Backend integration planned using Node.js and MongoDB."
               githublink="https://github.com/bhagyashreepawar1618/FOOD_MANAGEMENT.git"
-            />
-
-            {/* music recommander project */}
-            <Card
-              image={incoming}
-              cardName="Mood Music Recommander"
-              projectInfo="A full-stack  application (frontend completed). Backend integration planned using Node.js and MongoDB."
-              githublink="https://github.com/bhagyashreepawar1618/Mood_Music_Recommender.git"
             />
 
             {/* full stack social media clone  */}
@@ -38,11 +37,12 @@ function FullstackProjects() {
           </div>
 
           <div className="bg-white flex items-center justify-center max-w-[1300px] p-5 gap-5 mx-auto flex-col md:flex-row">
+            {/* music recommander project */}
             <Card
-              image={yt}
-              cardName="YouTube Clone"
-              projectInfo="A full-stack youtube clone  application , Backend integration planned using Node.js and MongoDB."
-              githublink="https://github.com/bhagyashreepawar1618/fullstack_yt_clone_app.git"
+              image={incoming}
+              cardName="Mood Music Recommander"
+              projectInfo="A full-stack  application (frontend completed). Backend integration planned using Node.js and MongoDB."
+              githublink="https://github.com/bhagyashreepawar1618/Mood_Music_Recommender.git"
             />
           </div>
         </center>
