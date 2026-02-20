@@ -20,7 +20,16 @@ function Header() {
               boxShadow: '0 10px 25px rgba(0,0,0,0.2)',
             }}
           >
-            <div className="text-white">Bhagyashree Pawar</div>
+            <div className="text-white">
+              Bhagyashree Pawar
+              <a
+                href="https://github.com/bhagyashreepawar1618"
+                className="text-white ms-2"
+              >
+                Github
+              </a>
+            </div>
+
             {/* for about section  */}
             <div>
               <NavLink
