@@ -1,7 +1,7 @@
 import myimg from '../../assets/myimg.jpeg';
-import Contact from '../Contact/Contact';
-import Skill from '../Skill/Skill';
-import FullstackProjects from '../Project/projectlayout/fullstack/FullstackProjects';
+import Contact from '../Contact/Contact.jsx';
+import Skill from '../Skill/Skill.jsx';
+import FullstackProjects from '../Project/projectlayout/fullstack/FullstackProjects.jsx';
 import Education from '../Education/Education.jsx';
 function About() {
   return (
@@ -52,7 +52,7 @@ function About() {
 
           {/* IMAGE - Right Side */}
           {/* IMAGE - Right Side */}
-          <div className="md:w-1/3 flex flex-col items-center md:items-end">
+          <div className="w-64 h-64 object-cover rounded-full shadow-lg border-4 border-purple-100">
             <img
               src={myimg}
               alt="Profile"
