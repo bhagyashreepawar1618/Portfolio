@@ -13,6 +13,7 @@ import FullstackProjects from './Layoutcomponents/Project/projectlayout/fullstac
 import JavascriptProjects from './Layoutcomponents/Project/projectlayout/javascript/JavascriptProjects.jsx';
 
 import './index.css';
+import Education from './Layoutcomponents/Education/education.jsx';
 
 //path route create
 const route = createBrowserRouter([
@@ -46,6 +47,10 @@ const route = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />,
+      },
+      {
+        path: '/education',
+        element: <Education />,
       },
     ],
   },

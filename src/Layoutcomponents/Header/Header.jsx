@@ -49,6 +49,24 @@ function Header() {
                 About
               </NavLink>
 
+              {/* Education  */}
+              <NavLink
+                to="/education"
+                style={({ isActive }) => ({
+                  textDecoration: 'none',
+                  color: isActive ? '#fff' : '#e9d5ff',
+                  background: isActive
+                    ? 'linear-gradient(90deg,#7c3aed,#a855f7)'
+                    : 'transparent',
+                  padding: '10px 18px',
+                  borderRadius: '999px',
+                  fontWeight: '600',
+                  transition: '0.3s',
+                })}
+              >
+                Education
+              </NavLink>
+
               {/* for skills section */}
               <NavLink
                 to="/projects"
