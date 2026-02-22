@@ -11,7 +11,7 @@ function Contact() {
     //api call here
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/v1/users/sendmessage',
+        'https://portfolio-3-9zew.onrender.com/api/v1/users/sendmessage',
         {
           name,
           email,
