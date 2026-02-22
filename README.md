@@ -30,7 +30,27 @@ This is my personal portfolio website built using the MERN stack to showcase my 
 ---
 
 ## 📂 Project Structure
-
+```bash
+portfolio/
+│
+├── server/
+│   ├── src/
+│   │   └── index.js
+│   ├── routes/
+│   ├── models/
+│   ├── controllers/
+│   └── package.json
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── public/
+├── package.json
+└── vite.config.js
+```
 
 ---
 
@@ -46,9 +66,9 @@ Currently learning **Next.js** and improving my MERN stack skills 🚀
 
 ## 📬 Connect With Me
 
-📧 yourgmail@gmail.com  
-🔗 LinkedIn: https://linkedin.com/in/yourprofile  
-💻 GitHub: https://github.com/yourusername  
+📧 bhagyashreepawar1618@gmail.com  
+🔗 LinkedIn: https://www.linkedin.com/in/bhagyashreepawar1618/
+
 
 ---
 
