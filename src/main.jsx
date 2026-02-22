@@ -13,7 +13,7 @@ import FullstackProjects from './Layoutcomponents/Project/projectlayout/fullstac
 import JavascriptProjects from './Layoutcomponents/Project/projectlayout/javascript/JavascriptProjects.jsx';
 
 import './index.css';
-import Education from './Layoutcomponents/Education/education.jsx';
+import Education from './Layoutcomponents/Education/Education.jsx';
 
 //path route create
 const route = createBrowserRouter([

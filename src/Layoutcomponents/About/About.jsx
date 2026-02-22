@@ -2,7 +2,7 @@ import myimg from '../../assets/myimg.jpeg';
 import Contact from '../Contact/Contact';
 import Skill from '../Skill/Skill';
 import FullstackProjects from '../Project/projectlayout/fullstack/FullstackProjects';
-import Education from '../Education/education';
+import Education from '../Education/Education.jsx';
 function About() {
   return (
     <>
