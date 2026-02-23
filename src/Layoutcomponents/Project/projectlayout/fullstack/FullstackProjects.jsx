@@ -18,6 +18,7 @@ function FullstackProjects() {
               cardName="YouTube Clone"
               projectInfo="A full-stack youtube clone  application , Backend integration planned using Node.js and MongoDB."
               githublink="https://github.com/bhagyashreepawar1618/fullstack_yt_clone_app.git"
+              liveDemoLink="https://fullstack-yt-clone-app.vercel.app"
             />
             {/* food management project */}
             <Card
