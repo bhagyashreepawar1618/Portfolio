@@ -4,13 +4,20 @@ import { Link, NavLink } from 'react-router-dom';
 function Header() {
   return (
     <>
-      <header style={{ marginTop: '15px', marginBottom: '15px' }}>
+      <header
+        style={{
+          marginBottom: '15px',
+          position: 'sticky',
+          top: '0',
+          zIndex: '1000',
+        }}
+      >
         <nav>
           <div
             style={{
-              width: '100vw',
+              width: '100%',
               background: 'linear-gradient(90deg,#3b0764,#581c87,#7e22ce)',
-              padding: '14px',
+              padding: '14px 20px',
               fontSize: '18px',
               fontWeight: 'bold',
               display: 'flex',
@@ -18,20 +25,39 @@ function Header() {
               alignItems: 'center',
               borderRadius: '50px',
               boxShadow: '0 10px 25px rgba(0,0,0,0.2)',
+              flexWrap: 'wrap',
+              gap: '10px',
             }}
           >
-            <div className="text-white">
+            {/* Left Side */}
+            <div
+              className="text-white"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '10px',
+                flexWrap: 'wrap',
+              }}
+            >
               Bhagyashree Pawar
               <a
                 href="https://github.com/bhagyashreepawar1618"
-                className="text-white ms-2"
+                className="text-white"
+                style={{ textDecoration: 'none' }}
               >
                 Github
               </a>
             </div>
 
-            {/* for about section  */}
-            <div>
+            {/* Right Side Links */}
+            <div
+              style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '8px',
+                justifyContent: 'center',
+              }}
+            >
               <NavLink
                 to="/"
                 style={({ isActive }) => ({
@@ -40,7 +66,7 @@ function Header() {
                   background: isActive
                     ? 'linear-gradient(90deg,#7c3aed,#a855f7)'
                     : 'transparent',
-                  padding: '10px 18px',
+                  padding: '8px 16px',
                   borderRadius: '999px',
                   fontWeight: '600',
                   transition: '0.3s',
@@ -49,7 +75,6 @@ function Header() {
                 About
               </NavLink>
 
-              {/* Education  */}
               <NavLink
                 to="/education"
                 style={({ isActive }) => ({
@@ -58,7 +83,7 @@ function Header() {
                   background: isActive
                     ? 'linear-gradient(90deg,#7c3aed,#a855f7)'
                     : 'transparent',
-                  padding: '10px 18px',
+                  padding: '8px 16px',
                   borderRadius: '999px',
                   fontWeight: '600',
                   transition: '0.3s',
@@ -67,7 +92,6 @@ function Header() {
                 Education
               </NavLink>
 
-              {/* for skills section */}
               <NavLink
                 to="/projects"
                 style={({ isActive }) => ({
@@ -76,7 +100,7 @@ function Header() {
                   background: isActive
                     ? 'linear-gradient(90deg,#7c3aed,#a855f7)'
                     : 'transparent',
-                  padding: '10px 18px',
+                  padding: '8px 16px',
                   borderRadius: '999px',
                   fontWeight: '600',
                   transition: '0.3s',
@@ -85,7 +109,6 @@ function Header() {
                 Projects
               </NavLink>
 
-              {/* for project section  */}
               <NavLink
                 to="/skills"
                 style={({ isActive }) => ({
@@ -94,7 +117,7 @@ function Header() {
                   background: isActive
                     ? 'linear-gradient(90deg,#7c3aed,#a855f7)'
                     : 'transparent',
-                  padding: '10px 18px',
+                  padding: '8px 16px',
                   borderRadius: '999px',
                   fontWeight: '600',
                   transition: '0.3s',
@@ -103,7 +126,6 @@ function Header() {
                 Skills
               </NavLink>
 
-              {/* for contact section  */}
               <NavLink
                 to="/contact"
                 style={({ isActive }) => ({
@@ -112,7 +134,7 @@ function Header() {
                   background: isActive
                     ? 'linear-gradient(90deg,#7c3aed,#a855f7)'
                     : 'transparent',
-                  padding: '10px 18px',
+                  padding: '8px 16px',
                   borderRadius: '999px',
                   fontWeight: '600',
                   transition: '0.3s',

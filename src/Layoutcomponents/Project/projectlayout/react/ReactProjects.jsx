@@ -1,5 +1,5 @@
 //simple component for react projects
-import Card from '../../Card';
+import Card from '../../Card.jsx';
 import incoming from '../../../../assets/incoming.png';
 import todo from '../../../../assets/react/Todo.png';
 import passgenerator from '../../../../assets/react/passgenerator.png';

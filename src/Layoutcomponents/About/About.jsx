@@ -3,24 +3,25 @@ import Contact from '../Contact/Contact.jsx';
 import Skill from '../Skill/Skill.jsx';
 import FullstackProjects from '../Project/projectlayout/fullstack/FullstackProjects.jsx';
 import Education from '../Education/Education.jsx';
+
 function About() {
   return (
     <>
-      <section className="min-h-screen bg-white px-6 py-16">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-12">
-          {/* TEXT - Left Side */}
-          <div className="md:w-2/3">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#635599] mb-6">
+      <section className="bg-gradient-to-b from-purple-50 to-white px-6 py-16">
+        <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+          {/* TEXT SECTION */}
+          <div className="md:w-2/3 text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#5b4b8a] mb-6">
               About Me
             </h1>
 
-            <p className="text-lg leading-8">
+            <p className="text-lg leading-8 text-gray-700">
               Hey! 👋 I’m a Computer Engineering student who loves building
               real-world web applications. I focus on creating practical,
               complete projects instead of just learning theory.
             </p>
 
-            <p className="text-lg leading-8 mt-4">
+            <p className="text-lg leading-8 mt-4 text-gray-700">
               I’ve built a <strong>YouTube Clone</strong> as a full-stack
               project and developed a <strong>Food Management system</strong>.
               Currently, I’m working on a <strong>Social Media Clone</strong>{' '}
@@ -32,7 +33,7 @@ function About() {
               What I’m Learning 🚀
             </h2>
 
-            <ul className="text-lg leading-8 mt-3 space-y-1">
+            <ul className="text-lg leading-8 mt-4 space-y-2 text-gray-700">
               <li>⚛️ React & Next.js</li>
               <li>🧠 Advanced JavaScript & APIs</li>
               <li>🗄️ Node.js, Express & MongoDB</li>
@@ -43,45 +44,43 @@ function About() {
               My Goal ✨
             </h2>
 
-            <p className="text-lg leading-8 mt-3">
+            <p className="text-lg leading-8 mt-4 text-gray-700">
               My goal is to become a confident fullstack developer who builds
               clean, scalable, and meaningful applications while continuously
               improving every day.
             </p>
           </div>
 
-          {/* IMAGE - Right Side */}
-          {/* IMAGE - Right Side */}
-          <div className="w-64 h-64 object-cover rounded-full shadow-lg border-4 border-purple-100">
-            <img
-              src={myimg}
-              alt="Profile"
-              className="w-64 h-64 object-cover rounded-full shadow-lg"
-            />
+          {/* IMAGE + BIO SECTION */}
+          <div className="md:w-1/3 flex flex-col items-center">
+            <div className="relative">
+              <img
+                src={myimg}
+                alt="Profile"
+                className="w-56 h-56 md:w-64 md:h-64 object-cover rounded-full shadow-xl border-4 border-purple-200"
+              />
+              <div className="absolute inset-0 rounded-full bg-purple-300 opacity-10 blur-2xl"></div>
+            </div>
 
-            {/* Small Bio Under Image */}
-            <div className="mt-4 text-center md:text-right">
-              <h3 className="text-xl font-semibold text-[#635599]">
-                BHAGYASHREE GORAKH PAWAR
+            {/* BIO CARD */}
+            <div className="mt-6 bg-white shadow-md rounded-xl px-6 py-4 text-center w-full">
+              <h3 className="text-xl font-semibold text-[#5b4b8a]">
+                Bhagyashree Gorakh Pawar
               </h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 text-sm mt-1">
                 2nd Year Computer Engineering Student
               </p>
-              <p className="text-gray-600 text-sm">MERN Stack Developer</p>
+              <p className="text-purple-600 text-sm font-medium">
+                MERN Stack Developer
+              </p>
             </div>
           </div>
         </div>
       </section>
-      {/* // education section */}
+
       <Education />
-
-      {/* projects section fullstack only */}
       <FullstackProjects />
-
-      {/* skills section  */}
       <Skill />
-
-      {/* contact me section */}
       <Contact />
     </>
   );
