@@ -2,7 +2,7 @@
 import Card from '../../Card';
 import food from '../../../../assets/fullstack/foodmanagement.png';
 import incoming from '../../../../assets/incoming.png';
-import yt from '../../../../assets/fullstack/ytclone.png';
+import yt from '../../../../assets/fullstack/newytclone.png';
 function FullstackProjects() {
   return (
     <>
