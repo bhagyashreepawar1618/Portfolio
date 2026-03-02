@@ -26,6 +26,7 @@ function FullstackProjects() {
               cardName="Food Management "
               projectInfo="A full-stack food management application (frontend completed). Backend integration planned using Node.js and MongoDB."
               githublink="https://github.com/bhagyashreepawar1618/FOOD_MANAGEMENT.git"
+              liveDemoLink="https://food-management-alpha.vercel.app"
             />
 
             {/* full stack social media clone  */}
