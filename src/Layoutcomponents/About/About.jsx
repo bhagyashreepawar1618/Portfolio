@@ -49,6 +49,26 @@ function About() {
               clean, scalable, and meaningful applications while continuously
               improving every day.
             </p>
+
+            {/* NEW PROFESSIONAL SECTION */}
+
+            <h2 className="text-2xl font-semibold text-[#63559f] mt-8">
+              Professional Focus 💼
+            </h2>
+
+            <p className="text-lg leading-8 mt-4 text-gray-700">
+              I am currently <strong>open to internship opportunities</strong>{' '}
+              in Fullstack or MERN Stack Development roles (Remote). I am eager
+              to contribute to real-world projects and collaborate with
+              experienced developers in a professional environment.
+            </p>
+
+            <p className="text-lg leading-8 mt-4 text-gray-700">
+              Through my projects, I have designed and implemented scalable
+              backend systems with JWT authentication, user management, and 30+
+              REST API endpoints, focusing on clean architecture and
+              performance-oriented development.
+            </p>
           </div>
 
           {/* IMAGE + BIO SECTION */}
