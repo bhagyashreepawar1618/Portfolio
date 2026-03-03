@@ -42,10 +42,11 @@ function Header() {
               Bhagyashree Pawar
               <a
                 href="https://github.com/bhagyashreepawar1618"
-                className="text-white"
-                style={{ textDecoration: 'none' }}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-purple-500 text-white font-medium shadow-md hover:shadow-lg hover:scale-105 transform transition duration-300 ease-in-out"
               >
-                Github
+                🚀 View GitHub
               </a>
             </div>
 
