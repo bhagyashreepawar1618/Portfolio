@@ -17,8 +17,7 @@ function About() {
 
             <p className="text-lg leading-8 text-gray-700">
               Hey! 👋 I’m a Computer Engineering student who loves building
-              real-world web applications. I focus on creating practical,
-              complete projects instead of just learning theory.
+              real-world web applications.
             </p>
 
             <p className="text-lg leading-8 mt-4 text-gray-700">
@@ -39,16 +38,6 @@ function About() {
               <li>🗄️ Node.js, Express & MongoDB</li>
               <li>🚀 Building scalable applications</li>
             </ul>
-
-            <h2 className="text-2xl font-semibold text-[#63559f] mt-8">
-              My Goal ✨
-            </h2>
-
-            <p className="text-lg leading-8 mt-4 text-gray-700">
-              My goal is to become a confident fullstack developer who builds
-              clean, scalable, and meaningful applications while continuously
-              improving every day.
-            </p>
 
             {/* NEW PROFESSIONAL SECTION */}
 
