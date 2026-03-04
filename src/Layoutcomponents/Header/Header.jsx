@@ -1,6 +1,4 @@
-import react from 'react';
-import { Link, NavLink } from 'react-router-dom';
-
+import { NavLink } from 'react-router-dom';
 function Header() {
   return (
     <>
@@ -40,17 +38,24 @@ function Header() {
               }}
             >
               Bhagyashree Pawar
-              {/* ✅ Resume Download Button (ONLY ADDED THIS) */}
               <a
-                href="/Bhagyashree_Pawar_Resume_Updated.pdf"
-                download
-                className="inline-block px-5 py-2 rounded-full bg-white text-purple-800 font-medium shadow-md hover:shadow-lg hover:scale-105 transform transition duration-300"
+                href="https://github.com/bhagyashreepawar1618"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-purple-500 text-white font-medium shadow-md hover:shadow-lg hover:scale-105 transform transition duration-300 ease-in-out"
               >
-                📄 Resume
+                🚀 View GitHub
+              </a>
+              {/* ✅ Resume Download Button (ONLY THIS ADDED) */}
+              <a
+                href="/Bhagyashree_Pawar_Resume1.pdf"
+                download
+                className="inline-block px-6 py-2 rounded-full bg-white text-purple-800 font-medium shadow-md hover:shadow-lg hover:scale-105 transform transition duration-300 ease-in-out"
+              >
+                📄 Download Resume
               </a>
             </div>
-
-            {/* Right Side Links (AS IT IS) */}
+            {/* Right Side Links */}
             <div
               style={{
                 display: 'flex',
@@ -75,7 +80,6 @@ function Header() {
               >
                 About
               </NavLink>
-
               <NavLink
                 to="/education"
                 style={({ isActive }) => ({
@@ -92,7 +96,6 @@ function Header() {
               >
                 Education
               </NavLink>
-
               <NavLink
                 to="/projects"
                 style={({ isActive }) => ({
@@ -109,7 +112,6 @@ function Header() {
               >
                 Projects
               </NavLink>
-
               <NavLink
                 to="/skills"
                 style={({ isActive }) => ({
@@ -126,7 +128,6 @@ function Header() {
               >
                 Skills
               </NavLink>
-
               <NavLink
                 to="/contact"
                 style={({ isActive }) => ({
@@ -150,5 +151,4 @@ function Header() {
     </>
   );
 }
-
 export default Header;
