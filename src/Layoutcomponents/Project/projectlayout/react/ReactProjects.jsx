@@ -24,7 +24,7 @@ function ReactProjects() {
               image={passgenerator}
               cardName="Password Generator"
               projectInfo="built using React (Api integration)."
-              githublink=""
+              githublink="https://github.com/bhagyashreepawar1618/react_journey/tree/main/password_generator"
             />
 
             <Card
