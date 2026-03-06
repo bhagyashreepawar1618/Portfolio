@@ -3,6 +3,7 @@ import Card from '../../Card';
 import food from '../../../../assets/fullstack/foodmanagement.png';
 import incoming from '../../../../assets/incoming.png';
 import yt from '../../../../assets/fullstack/newytclone.png';
+import aiProject from '../../../../assets/fullstack/aiProject.png';
 function FullstackProjects() {
   return (
     <>
@@ -31,10 +32,11 @@ function FullstackProjects() {
 
             {/* full stack social media clone  */}
             <Card
-              image={incoming}
-              cardName="Social Media web App"
-              projectInfo="A full-stack  social media app clone built using react and Appwrite."
-              githublink="https://github.com/bhagyashreepawar1618/Social_Media_Web_App.git"
+              image={aiProject}
+              cardName="AI Powered Sustainable Commerce"
+              projectInfo="AI powered MERN application that automatically generates product categories, SEO tags etc for eco-commerce platforms."
+              githublink="https://github.com/bhagyashreepawar1618/EcoCommerce_AI"
+              liveDemoLink="https://eco-commerce-ai.vercel.app"
             />
           </div>
 
