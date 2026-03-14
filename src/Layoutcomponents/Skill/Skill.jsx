@@ -5,7 +5,6 @@ function Skill() {
   return (
     <section className="py-12 bg-purple-50">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        {/* Heading */}
         <h1 className="text-3xl md:text-4xl font-bold text-purple-800 mb-10">
           Skills
         </h1>
@@ -23,23 +22,69 @@ function Skill() {
           space complexity.
         </p>
 
-        {/* Skills Grid */}
-        <div className="mt-12">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-items-center">
-            <Icons iconname="html5" />
-            <Icons iconname="css3" />
-            <Icons iconname="javascript" />
-            <Icons iconname="bootstrap" />
-            <Icons iconname="tailwindcss" />
-            <Icons iconname="figma" />
-            <Icons iconname="cplusplus" />
-            <Icons iconname="git" />
-            <Icons iconname="github" />
-            <Icons iconname="react" />
-            <Icons iconname="nodejs" />
-            <Icons iconname="express" />
-            <Icons iconname="mongodb" />
-          </div>
+        {/* Languages */}
+        <h2 className="text-2xl font-semibold text-purple-700 mt-12 mb-6">
+          Languages
+        </h2>
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-items-center">
+          <Icons iconname="javascript" />
+          <Icons iconname="cplusplus" />
+        </div>
+
+        {/* Frontend */}
+        <h2 className="text-2xl font-semibold text-purple-700 mt-12 mb-6">
+          Frontend Development
+        </h2>
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-items-center">
+          <Icons iconname="html5" />
+          <Icons iconname="css3" />
+          <Icons iconname="react" />
+        </div>
+
+        {/* Frameworks */}
+        <h2 className="text-2xl font-semibold text-purple-700 mt-12 mb-6">
+          Frameworks & Libraries
+        </h2>
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-items-center">
+          <Icons iconname="bootstrap" />
+          <Icons iconname="tailwindcss" />
+        </div>
+
+        {/* Backend */}
+        <h2 className="text-2xl font-semibold text-purple-700 mt-12 mb-6">
+          Backend Development
+        </h2>
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-items-center">
+          <Icons iconname="nodejs" />
+          <Icons iconname="express" />
+        </div>
+
+        {/* Databases */}
+        <h2 className="text-2xl font-semibold text-purple-700 mt-12 mb-6">
+          Databases
+        </h2>
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-items-center">
+          <Icons iconname="mongodb" />
+          <Icons iconname="mysql" />
+        </div>
+
+        {/* Deployment */}
+        <h2 className="text-2xl font-semibold text-purple-700 mt-12 mb-6">
+          Deployment
+        </h2>
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-items-center">
+          <Icons iconname="vercel" />
+          <Icons iconname="render" />
+        </div>
+
+        {/* Tools */}
+        <h2 className="text-2xl font-semibold text-purple-700 mt-12 mb-6">
+          Tools & Design
+        </h2>
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 justify-items-center">
+          <Icons iconname="git" />
+          <Icons iconname="github" />
+          <Icons iconname="figma" />
         </div>
       </div>
     </section>
