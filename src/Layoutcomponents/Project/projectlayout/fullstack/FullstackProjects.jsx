@@ -5,6 +5,7 @@ import incoming from '../../../../assets/incoming.png';
 import yt from '../../../../assets/fullstack/newytclone.png';
 import aiProject from '../../../../assets/fullstack/aiProject.png';
 import golf from '../../../../assets/fullstack/golf.png';
+import aiplayground from '../../../../assets/fullstack/aiplayground.png';
 function FullstackProjects() {
   return (
     <>
@@ -47,6 +48,14 @@ function FullstackProjects() {
               projectInfo="AI powered MERN application that automatically generates product categories, SEO tags etc for eco-commerce platforms."
               githublink="https://github.com/bhagyashreepawar1618/EcoCommerce_AI"
               liveDemoLink="https://eco-commerce-ai.vercel.app"
+            />
+
+            <Card
+              image={aiplayground}
+              cardName="AI Powered mern stack application"
+              projectInfo="Incoming (work in Progress)"
+              githublink="https://github.com/bhagyashreepawar1618/AI_PLAYGROUND"
+              liveDemoLink="#"
             />
 
             <Card
