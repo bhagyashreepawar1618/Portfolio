@@ -4,6 +4,7 @@ import food from '../../../../assets/fullstack/foodmanagement.png';
 import incoming from '../../../../assets/incoming.png';
 import yt from '../../../../assets/fullstack/newytclone.png';
 import aiProject from '../../../../assets/fullstack/aiProject.png';
+import golf from '../../../../assets/fullstack/golf.png';
 function FullstackProjects() {
   return (
     <>
@@ -30,7 +31,16 @@ function FullstackProjects() {
               liveDemoLink="https://food-management-alpha.vercel.app"
             />
 
-            {/* full stack social media clone  */}
+            <Card
+              image={golf}
+              cardName="golf charity platform"
+              projectInfo="A subscription-based golf platform where users track scores, participate in monthly draws, and win rewards."
+              githublink="https://github.com/bhagyashreepawar1618/golf-charity-platform"
+              liveDemoLink="https://golf-charity-platform-ochre-six.vercel.app"
+            />
+          </div>
+
+          <div className="bg-white flex items-center justify-center max-w-[1300px] p-5 gap-5 mx-auto flex-col md:flex-row">
             <Card
               image={aiProject}
               cardName="AI Powered Sustainable Commerce"
@@ -38,10 +48,7 @@ function FullstackProjects() {
               githublink="https://github.com/bhagyashreepawar1618/EcoCommerce_AI"
               liveDemoLink="https://eco-commerce-ai.vercel.app"
             />
-          </div>
 
-          <div className="bg-white flex items-center justify-center max-w-[1300px] p-5 gap-5 mx-auto flex-col md:flex-row">
-            {/* music recommander project */}
             <Card
               image={incoming}
               cardName="Mood Music Recommander"
