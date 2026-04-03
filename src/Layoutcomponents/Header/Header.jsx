@@ -1,154 +1,69 @@
 import { NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
 function Header() {
   return (
-    <>
-      <header
-        style={{
-          marginBottom: '15px',
-          position: 'sticky',
-          top: '0',
-          zIndex: '1000',
-        }}
-      >
-        <nav>
-          <div
-            style={{
-              width: '100%',
-              background: 'linear-gradient(90deg,#3b0764,#581c87,#7e22ce)',
-              padding: '14px 20px',
-              fontSize: '18px',
-              fontWeight: 'bold',
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              borderRadius: '50px',
-              boxShadow: '0 10px 25px rgba(0,0,0,0.2)',
-              flexWrap: 'wrap',
-              gap: '10px',
-            }}
+    <header className="sticky top-0 z-50 px-4 py-3 backdrop-blur-md bg-purple-900/80 shadow-lg">
+      <nav className="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-4">
+        {/* LEFT */}
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          className="flex items-center gap-4 flex-wrap"
+        >
+          <h1 className="text-lg md:text-xl font-bold text-white">
+            Bhagyashree Pawar
+          </h1>
+
+          <a
+            href="https://github.com/bhagyashreepawar1618"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 rounded-full bg-gradient-to-r from-purple-600 to-purple-400 text-white text-sm font-medium shadow hover:scale-105 transition"
           >
-            {/* Left Side */}
-            <div
-              className="text-white"
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '10px',
-                flexWrap: 'wrap',
-              }}
+            🚀 GitHub
+          </a>
+
+          <a
+            href="/Bhagyashree_Pawar_Resume1.pdf"
+            download
+            className="px-4 py-2 rounded-full border border-white text-white text-sm font-medium hover:bg-white hover:text-purple-800 transition"
+          >
+            📄 Resume
+          </a>
+        </motion.div>
+
+        {/* RIGHT */}
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          className="flex flex-wrap gap-2 justify-center"
+        >
+          {[
+            { to: '/', label: 'About' },
+            { to: '/education', label: 'Education' },
+            { to: '/projects', label: 'Projects' },
+            { to: '/skills', label: 'Skills' },
+            { to: '/contact', label: 'Contact' },
+          ].map((link, index) => (
+            <NavLink
+              key={index}
+              to={link.to}
+              className={({ isActive }) =>
+                `px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                  isActive
+                    ? 'bg-white text-purple-800 shadow'
+                    : 'text-purple-200 hover:bg-white/20 hover:text-white'
+                }`
+              }
             >
-              Bhagyashree Pawar
-              <a
-                href="https://github.com/bhagyashreepawar1618"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-purple-500 text-white font-medium shadow-md hover:shadow-lg hover:scale-105 transform transition duration-300 ease-in-out"
-              >
-                🚀 View GitHub
-              </a>
-              {/* ✅ Resume Download Button (ONLY THIS ADDED) */}
-              <a
-                href="/Bhagyashree_Pawar_Resume1.pdf"
-                download
-                className="inline-block px-6 py-2 rounded-full bg-white text-purple-800 font-medium shadow-md hover:shadow-lg hover:scale-105 transform transition duration-300 ease-in-out"
-              >
-                📄 Download Resume
-              </a>
-            </div>
-            {/* Right Side Links */}
-            <div
-              style={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                gap: '8px',
-                justifyContent: 'center',
-              }}
-            >
-              <NavLink
-                to="/"
-                style={({ isActive }) => ({
-                  textDecoration: 'none',
-                  color: isActive ? '#fff' : '#e9d5ff',
-                  background: isActive
-                    ? 'linear-gradient(90deg,#7c3aed,#a855f7)'
-                    : 'transparent',
-                  padding: '8px 16px',
-                  borderRadius: '999px',
-                  fontWeight: '600',
-                  transition: '0.3s',
-                })}
-              >
-                About
-              </NavLink>
-              <NavLink
-                to="/education"
-                style={({ isActive }) => ({
-                  textDecoration: 'none',
-                  color: isActive ? '#fff' : '#e9d5ff',
-                  background: isActive
-                    ? 'linear-gradient(90deg,#7c3aed,#a855f7)'
-                    : 'transparent',
-                  padding: '8px 16px',
-                  borderRadius: '999px',
-                  fontWeight: '600',
-                  transition: '0.3s',
-                })}
-              >
-                Education
-              </NavLink>
-              <NavLink
-                to="/projects"
-                style={({ isActive }) => ({
-                  textDecoration: 'none',
-                  color: isActive ? '#fff' : '#e9d5ff',
-                  background: isActive
-                    ? 'linear-gradient(90deg,#7c3aed,#a855f7)'
-                    : 'transparent',
-                  padding: '8px 16px',
-                  borderRadius: '999px',
-                  fontWeight: '600',
-                  transition: '0.3s',
-                })}
-              >
-                Projects
-              </NavLink>
-              <NavLink
-                to="/skills"
-                style={({ isActive }) => ({
-                  textDecoration: 'none',
-                  color: isActive ? '#fff' : '#e9d5ff',
-                  background: isActive
-                    ? 'linear-gradient(90deg,#7c3aed,#a855f7)'
-                    : 'transparent',
-                  padding: '8px 16px',
-                  borderRadius: '999px',
-                  fontWeight: '600',
-                  transition: '0.3s',
-                })}
-              >
-                Skills
-              </NavLink>
-              <NavLink
-                to="/contact"
-                style={({ isActive }) => ({
-                  textDecoration: 'none',
-                  color: isActive ? '#fff' : '#e9d5ff',
-                  background: isActive
-                    ? 'linear-gradient(90deg,#7c3aed,#a855f7)'
-                    : 'transparent',
-                  padding: '8px 16px',
-                  borderRadius: '999px',
-                  fontWeight: '600',
-                  transition: '0.3s',
-                })}
-              >
-                Contact Me
-              </NavLink>
-            </div>
-          </div>
-        </nav>
-      </header>
-    </>
+              {link.label}
+            </NavLink>
+          ))}
+        </motion.div>
+      </nav>
+    </header>
   );
 }
+
 export default Header;
