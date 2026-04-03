@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { motion } from 'framer-motion';
 
 function Contact() {
   const [name, setName] = useState('');
@@ -12,35 +13,31 @@ function Contact() {
     try {
       const response = await axios.post(
         'https://portfolio-3-9zew.onrender.com/api/v1/users/sendmessage',
-        {
-          name,
-          email,
-          message,
-        }
+        { name, email, message }
       );
-      console.log('response from backend is =', response.data);
-      alert('Message Sent Successfully..!!');
+      alert('Message Sent Successfully 🚀');
     } catch (error) {
-      console.log(
-        'Error occured while sending your information ',
-        error.response?.data || error.message
-      );
+      console.log(error.response?.data || error.message);
     }
   };
 
   return (
     <>
-      {/* Top Contact Info Section */}
-      <section className="bg-gradient-to-b from-purple-50 to-white py-12">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <div className="flex flex-col gap-4 text-purple-700 text-base items-center">
-            <p className="text-purple-600 font-medium">
-              🚀 MERN Stack Developer
-            </p>
+      {/* TOP INFO */}
+      <section className="bg-gradient-to-b from-purple-50 to-white py-16">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="max-w-4xl mx-auto px-6 text-center"
+        >
+          <p className="text-purple-600 font-medium text-lg">
+            🚀 Full-stack Developer (MERN)
+          </p>
 
+          <div className="mt-6 flex flex-col gap-3 text-gray-700">
             <a
               href="mailto:bhagyashreepawar1618@gmail.com"
-              className="hover:text-purple-900 transition"
+              className="hover:text-purple-700 transition"
             >
               📧 bhagyashreepawar1618@gmail.com
             </a>
@@ -48,8 +45,8 @@ function Contact() {
             <a
               href="https://github.com/bhagyashreepawar1618"
               target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-purple-900 transition"
+              rel="noreferrer"
+              className="hover:text-purple-700 transition"
             >
               💻 GitHub
             </a>
@@ -57,28 +54,35 @@ function Contact() {
             <a
               href="https://linkedin.com/in/yourprofile"
               target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-purple-900 transition"
+              rel="noreferrer"
+              className="hover:text-purple-700 transition"
             >
               🔗 LinkedIn
             </a>
           </div>
-        </div>
+        </motion.div>
       </section>
 
-      {/* Contact Form Section */}
-      <section className="py-16 bg-purple-50">
+      {/* FORM */}
+      <section className="py-20 bg-purple-50">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-purple-800 mb-4">
-            Contact Me
-          </h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="text-3xl md:text-4xl font-bold text-center text-purple-800 mb-4"
+          >
+            Let’s Connect
+          </motion.h2>
 
-          <p className="text-center text-purple-600 mb-10">
-            Have a project, opportunity, or just want to connect? Feel free to
-            reach out 👋
+          <p className="text-center text-gray-600 mb-10">
+            Open to internships, collaborations, or just a quick chat 👋
           </p>
 
-          <div className="bg-white rounded-2xl shadow-lg p-6 md:p-10">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            className="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl p-6 md:p-10 border border-purple-100"
+          >
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
               <div className="flex flex-col md:flex-row gap-5">
                 <input
@@ -108,9 +112,9 @@ function Contact() {
 
               <button
                 type="submit"
-                className="w-full md:w-auto bg-purple-600 text-white px-8 py-3 rounded-full font-medium hover:bg-purple-700 transition duration-300 shadow-md"
+                className="w-full md:w-fit bg-gradient-to-r from-purple-700 to-purple-500 text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition duration-300 shadow-md"
               >
-                Send Message
+                Send Message 🚀
               </button>
             </form>
 
@@ -118,12 +122,14 @@ function Contact() {
             <div className="my-10 h-px bg-purple-100" />
 
             {/* Bottom Info */}
-            <div className="flex flex-col md:flex-row justify-between items-center text-sm text-purple-700 gap-4 text-center md:text-left">
+            <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-600 gap-4 text-center md:text-left">
               <p>📧 bhagyashreepawar1618@gmail.com</p>
               <p>📍 India</p>
-              <p>💼 Open to opportunities</p>
+              <p className="text-purple-700 font-medium">
+                💼 Open to opportunities
+              </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>
