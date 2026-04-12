@@ -6,6 +6,7 @@ import yt from '../../../../assets/fullstack/newytclone.png';
 import aiProject from '../../../../assets/fullstack/aiProject.png';
 import golf from '../../../../assets/fullstack/golf.png';
 import aiplayground from '../../../../assets/fullstack/aiplayground.png';
+import task from '../../../../assets/fullstack/task.png';
 function FullstackProjects() {
   return (
     <>
@@ -59,10 +60,11 @@ function FullstackProjects() {
             />
 
             <Card
-              image={incoming}
-              cardName="Mood Music Recommander"
-              projectInfo="A full-stack  application (frontend completed). Backend integration planned using Node.js and MongoDB."
-              githublink="https://github.com/bhagyashreepawar1618/Mood_Music_Recommender.git"
+              image={task}
+              cardName="Task Manager"
+              projectInfo="A fullstack(MERN) Task manager platform Which allows user to store tasks ,mark it as complete and incomplete and delete it"
+              githublink="https://github.com/bhagyashreepawar1618/TASK_Manager__MERN"
+              liveDemoLink="https://task-manager-mern-zmil.vercel.app"
             />
           </div>
         </center>
