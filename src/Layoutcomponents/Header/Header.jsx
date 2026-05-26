@@ -25,7 +25,7 @@ function Header() {
           </a>
 
           <a
-            href="/Bhagyashree_Pawar_Resume1.pdf"
+            href="/BhagyashreePawarResume.pdf"
             download
             className="px-4 py-2 rounded-full border border-white text-white text-sm font-medium hover:bg-white hover:text-purple-800 transition"
           >
