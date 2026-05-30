@@ -42,7 +42,10 @@ function Skill() {
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
               <Icons iconname="javascript" />
+              <Icons iconname="python" />
               <Icons iconname="cplusplus" />
+              <Icons iconname="typescript" />
+              <Icons iconname="c" />
             </div>
           </div>
 
@@ -53,7 +56,7 @@ function Skill() {
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
               <Icons iconname="html5" />
-              <Icons iconname="css3" />
+              <Icons iconname="css" />
               <Icons iconname="react" />
             </div>
           </div>
@@ -75,7 +78,7 @@ function Skill() {
               Backend Development
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
-              <Icons iconname="nodejs" />
+              <Icons iconname="node" />
               <Icons iconname="express" />
             </div>
           </div>
@@ -91,12 +94,13 @@ function Skill() {
             </div>
           </div>
 
-          {/* Deployment */}
+          {/* DevOps & Deployment */}
           <div>
             <h2 className="text-xl font-semibold text-purple-700 mb-6">
-              Deployment
+              DevOps & Deployment
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
+              <Icons iconname="docker" />
               <Icons iconname="vercel" />
               <Icons iconname="render" />
             </div>
@@ -110,7 +114,7 @@ function Skill() {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
               <Icons iconname="git" />
               <Icons iconname="github" />
-              <Icons iconname="figma" />
+              <Icons iconname="postman" />
             </div>
           </div>
         </div>
